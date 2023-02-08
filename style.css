@@ -1,0 +1,93 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+*,
+ ::before,
+ ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-width: 100vw;
+    height: 100vh;
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    position: relative;
+}
+
+main {
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 2em;
+    text-align: center;
+    color: white;
+}
+
+#huddle-logo {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+#illustration-mockups {
+    width: 100%;
+    height: 100%;
+    margin: 4em 0em;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.625em;
+    margin-bottom: 0.75em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 0em 0.125em;
+    word-wrap: initial;
+    line-height: 1.5;
+    margin-bottom: 0.75em;
+}
+
+#registration-button {
+    width: 65%;
+    height: 3em;
+    color: var(--violet);
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0em 0.125em 0.25em hsl(257, 42%, 30%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+}
+
+.attribution a {
+    color: white;
+}
+
+@media screen and (min-width: 376px) {
+    body {
+        background-image: url(./images/bg-desktop.svg);
+    }
+}
