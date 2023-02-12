@@ -37,7 +37,6 @@ main {
     width: 50%;
     height: auto;
     float: left;
-    margin-bottom: 1em;
 }
 
 #illustration-mockups {
@@ -88,5 +87,52 @@ footer {
 @media screen and (min-width: 376px) {
     body {
         background-image: url(./images/bg-desktop.svg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        width: 90vw;
+        height: auto;
+    }
+    .huddle-images {
+        width: 50%;
+        height: 90%;
+    }
+    #huddle-logo {
+        width: 30%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .information-side {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-container {
+        max-width: 70%;
+    }
+    h1 {
+        font-size: 2.5em;
+        margin: 0em 0em 1em 0em;
+        padding: 0;
+    }
+    p {
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+    }
+    #registration-button {
+        width: 40%;
     }
 }
