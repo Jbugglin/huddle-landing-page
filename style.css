@@ -84,7 +84,7 @@ footer {
     color: white;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 1024px) {
     body {
         background-image: url(./images/bg-desktop.svg);
         display: flex;
@@ -98,18 +98,21 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: left;
-        width: 90vw;
+        max-width: 95vw;
         height: auto;
+        border: 2px solid yellow;
     }
     .huddle-images {
         width: 50%;
         height: 90%;
+        border: 1px solid red;
     }
     #huddle-logo {
         width: 30%;
         height: auto;
         margin: 0;
         padding: 0;
+        border: 1px solid white;
     }
     .information-side {
         width: 50%;
@@ -117,15 +120,17 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        margin-left: 2em;
     }
     .info-container {
         max-width: 70%;
     }
     h1 {
-        font-size: 2.5em;
-        margin: 0em 0em 1em 0em;
+        font-size: 2.25em;
+        margin: 0em 0em 0.625em 0em;
         padding: 0;
+        border: 1px solid white;
     }
     p {
         font-size: 1em;
